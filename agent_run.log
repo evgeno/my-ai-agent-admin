@@ -1,0 +1,145 @@
+{"ts": 1771763986.784023, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "root", "max_steps": 25}
+{"ts": 1771763994.953579, "event": "ssh_start", "host": "192.168.64.4", "user": "root", "cmd": "dpkg -l nginx", "timeout": 600}
+{"ts": 1771764000.9893508, "event": "ssh_start", "host": "192.168.64.4", "user": "root", "cmd": "hostname", "timeout": 600}
+{"ts": 1771764006.7799869, "event": "ssh_start", "host": "192.168.64.4", "user": "root", "cmd": "date", "timeout": 600}
+{"ts": 1771764011.025829, "event": "ssh_start", "host": "192.168.64.4", "user": "root", "cmd": "echo test", "timeout": 600}
+{"ts": 1771764034.973651, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 25}
+{"ts": 1771764041.458771, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get update", "timeout": 600}
+{"ts": 1771764041.6911302, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get update", "exit_code": 100, "ok": false, "duration_s": 0.232, "stdout_len": 447, "stderr_len": 0}
+{"ts": 1771764043.076004, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get upgrade -y", "timeout": 600}
+{"ts": 1771764043.3229609, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get upgrade -y", "exit_code": 100, "ok": false, "duration_s": 0.247, "stdout_len": 226, "stderr_len": 0}
+{"ts": 1771764046.661702, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "dpkg -l nginx", "timeout": 600}
+{"ts": 1771764046.874343, "event": "ssh_done", "cmd": "dpkg -l nginx", "exit_code": 1, "ok": false, "duration_s": 0.212, "stdout_len": 77, "stderr_len": 0}
+{"ts": 1771764072.1746938, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get install -y nginx", "timeout": 600}
+{"ts": 1771764072.417516, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get install -y nginx", "exit_code": 100, "ok": false, "duration_s": 0.242, "stdout_len": 226, "stderr_len": 0}
+{"ts": 1771764074.655238, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "echo hello", "timeout": 600}
+{"ts": 1771764074.880472, "event": "ssh_done", "cmd": "echo hello", "exit_code": 0, "ok": true, "duration_s": 0.224, "stdout_len": 7, "stderr_len": 0}
+{"ts": 1771764079.232482, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "touch test.txt", "timeout": 600}
+{"ts": 1771764079.477512, "event": "ssh_done", "cmd": "touch test.txt", "exit_code": 0, "ok": true, "duration_s": 0.244, "stdout_len": 0, "stderr_len": 0}
+{"ts": 1771764096.122595, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get --help", "timeout": 600}
+{"ts": 1771764096.2985349, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get --help", "exit_code": 0, "ok": true, "duration_s": 0.175, "stdout_len": 1747, "stderr_len": 0}
+{"ts": 1771764102.571108, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "sudo -n true", "timeout": 600}
+{"ts": 1771764102.8080409, "event": "ssh_done", "cmd": "sudo -n true", "exit_code": 127, "ok": false, "duration_s": 0.236, "stdout_len": 42, "stderr_len": 0}
+{"ts": 1771764106.29145, "event": "agent_done", "final_len": 0}
+{"ts": 1771765017.072062, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 25}
+{"ts": 1771765021.8125591, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get update", "timeout": 600}
+{"ts": 1771765022.061346, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get update", "exit_code": 100, "ok": false, "duration_s": 0.248, "stdout_len": 447, "stderr_len": 0}
+{"ts": 1771765025.239792, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get upgrade -y", "timeout": 600}
+{"ts": 1771765025.502483, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get upgrade -y", "exit_code": 100, "ok": false, "duration_s": 0.262, "stdout_len": 226, "stderr_len": 0}
+{"ts": 1771765036.3533409, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "dpkg -l nginx", "timeout": 600}
+{"ts": 1771765036.6011698, "event": "ssh_done", "cmd": "dpkg -l nginx", "exit_code": 1, "ok": false, "duration_s": 0.247, "stdout_len": 77, "stderr_len": 0}
+{"ts": 1771765057.7602692, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get install nginx -y", "timeout": 600}
+{"ts": 1771765058.0039198, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive apt-get install nginx -y", "exit_code": 100, "ok": false, "duration_s": 0.243, "stdout_len": 226, "stderr_len": 0}
+{"ts": 1771765068.918931, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "dpkg -s nginx", "timeout": 600}
+{"ts": 1771765069.160223, "event": "ssh_done", "cmd": "dpkg -s nginx", "exit_code": 1, "ok": false, "duration_s": 0.24, "stdout_len": 158, "stderr_len": 0}
+{"ts": 1771765071.374586, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "systemctl is-active nginx", "timeout": 600}
+{"ts": 1771765071.55341, "event": "ssh_done", "cmd": "systemctl is-active nginx", "exit_code": 4, "ok": false, "duration_s": 0.178, "stdout_len": 10, "stderr_len": 0}
+{"ts": 1771765092.3688471, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "pgrep nginx", "timeout": 600}
+{"ts": 1771765092.554079, "event": "ssh_done", "cmd": "pgrep nginx", "exit_code": 1, "ok": false, "duration_s": 0.184, "stdout_len": 0, "stderr_len": 0}
+{"ts": 1771765096.891061, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "dpkg -l nginx", "timeout": 600}
+{"ts": 1771765097.11613, "event": "ssh_done", "cmd": "dpkg -l nginx", "exit_code": 1, "ok": false, "duration_s": 0.224, "stdout_len": 77, "stderr_len": 0}
+{"ts": 1771765104.510644, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "systemctl status nginx", "timeout": 600}
+{"ts": 1771765104.748673, "event": "ssh_done", "cmd": "systemctl status nginx", "exit_code": 4, "ok": false, "duration_s": 0.237, "stdout_len": 75, "stderr_len": 0}
+{"ts": 1771765114.385619, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "hostname", "timeout": 600}
+{"ts": 1771765114.5618749, "event": "ssh_done", "cmd": "hostname", "exit_code": 0, "ok": true, "duration_s": 0.175, "stdout_len": 8, "stderr_len": 0}
+{"ts": 1771765134.454634, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "nginx -v", "timeout": 600}
+{"ts": 1771765134.6196349, "event": "ssh_done", "cmd": "nginx -v", "exit_code": 127, "ok": false, "duration_s": 0.164, "stdout_len": 43, "stderr_len": 0}
+{"ts": 1771766326.502238, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771766474.091827, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771766485.443928, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "nginx -v", "timeout": 600}
+{"ts": 1771766485.675411, "event": "ssh_done", "cmd": "nginx -v", "exit_code": 127, "ok": false, "duration_s": 0.231, "stdout_len": 43, "stderr_len": 0, "stdout_head": "bash: строка 1: nginx: команда не найдена\r\n", "stderr_head": ""}
+{"ts": 1771766491.777948, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "systemctl is-active nginx", "timeout": 600}
+{"ts": 1771766491.974425, "event": "ssh_done", "cmd": "systemctl is-active nginx", "exit_code": 4, "ok": false, "duration_s": 0.196, "stdout_len": 10, "stderr_len": 0, "stdout_head": "inactive\r\n", "stderr_head": ""}
+{"ts": 1771766495.568733, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get update", "timeout": 600}
+{"ts": 1771766496.285808, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get update", "exit_code": 0, "ok": true, "duration_s": 0.716, "stdout_len": 1179, "stderr_len": 0}
+{"ts": 1771766503.122232, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get install nginx -y", "timeout": 600}
+{"ts": 1771766505.7958772, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get install nginx -y", "exit_code": 0, "ok": true, "duration_s": 2.672, "stdout_len": 2665, "stderr_len": 0}
+{"ts": 1771766509.079208, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "systemctl is-active nginx", "timeout": 600}
+{"ts": 1771766509.333956, "event": "ssh_done", "cmd": "systemctl is-active nginx", "exit_code": 0, "ok": true, "duration_s": 0.254, "stdout_len": 8, "stderr_len": 0}
+{"ts": 1771769895.6034298, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771769901.298482, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get update", "timeout": 600}
+{"ts": 1771769902.061795, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get update", "exit_code": 0, "ok": true, "duration_s": 0.763, "stdout_len": 1179, "stderr_len": 0}
+{"ts": 1771769903.9482582, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade -y", "timeout": 600}
+{"ts": 1771769904.4133859, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade -y", "exit_code": 0, "ok": true, "duration_s": 0.464, "stdout_len": 590, "stderr_len": 0}
+{"ts": 1771769906.099999, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "dpkg -l nginx", "timeout": 600}
+{"ts": 1771770470.826097, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771770478.628293, "event": "ssh_denied", "cmd": "nginx -v 2>&1 || echo \"nginx не установлен\" && systemctl is-active nginx 2>/dev/null || echo \"nginx не запущен\"", "error": "Chaining/token '&&' is not allowed. One command per step."}
+{"ts": 1771770481.4831018, "event": "llm_error", "error": "Error code: 402 - {'error': {'message': 'Provider returned error', 'code': 402, 'metadata': {'raw': '{\"error\":\"API key USD spend limit exceeded. Your account may still have USD balance, but this API key has reached its configured USD spending limit.\"}', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_34sxSqLhNDODWjHuDx13Eze0hSI'}", "type": "APIStatusError"}
+{"ts": 1771770481.4850318, "event": "report_written", "path": "reports/report_192.168.64.4_20260222_142801.md"}
+{"ts": 1771770481.4852722, "event": "agent_done", "final_len": 380, "steps": 1}
+{"ts": 1771770593.151268, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771770593.4099898, "event": "llm_error", "error": "Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection', 'code': 404}}", "type": "NotFoundError"}
+{"ts": 1771770593.411107, "event": "report_written", "path": "reports/report_192.168.64.4_20260222_142953.md"}
+{"ts": 1771770593.4112902, "event": "agent_done", "final_len": 236, "steps": 0}
+{"ts": 1771770637.288728, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771770638.669982, "event": "llm_error", "error": "Error code: 402 - {'error': {'message': 'Provider returned error', 'code': 402, 'metadata': {'raw': '{\"error\":\"API key USD spend limit exceeded. Your account may still have USD balance, but this API key has reached its configured USD spending limit.\"}', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_34sxSqLhNDODWjHuDx13Eze0hSI'}", "type": "APIStatusError"}
+{"ts": 1771770638.671382, "event": "report_written", "path": "reports/report_192.168.64.4_20260222_143038.md"}
+{"ts": 1771770638.671602, "event": "agent_done", "final_len": 380, "steps": 0}
+{"ts": 1771770685.2810628, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771770687.820811, "event": "llm_rate_limited", "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'qwen/qwen3-coder:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_34sxSqLhNDODWjHuDx13Eze0hSI'}"}
+{"ts": 1771770687.8216, "event": "report_written", "path": "reports/report_192.168.64.4_20260222_143127.md"}
+{"ts": 1771770687.821738, "event": "agent_done", "final_len": 493, "steps": 0}
+{"ts": 1771770743.360368, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771770743.6219451, "event": "llm_error", "error": "Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection', 'code': 404}}", "type": "NotFoundError"}
+{"ts": 1771770743.623404, "event": "report_written", "path": "reports/report_192.168.64.4_20260222_143223.md"}
+{"ts": 1771770743.623636, "event": "agent_done", "final_len": 236, "steps": 0}
+{"ts": 1771772161.9595451, "event": "agent_start", "goal": "Обнови систему и проверь nginx. Если nginx не установлен — установи и запусти.", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771772166.78067, "event": "ssh_denied", "cmd": "nginx -v 2>/dev/null || echo \"nginx не установлен\"", "error": "Chaining/token '||' is not allowed. One command per step."}
+{"ts": 1771772174.3043761, "event": "ssh_denied", "cmd": "dpkg -l | grep nginx || echo \"nginx не найден в списках\"", "error": "Chaining/token '||' is not allowed. One command per step."}
+{"ts": 1771772179.131407, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get update", "timeout": 600}
+{"ts": 1771772179.916069, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get update", "exit_code": 0, "ok": true, "duration_s": 0.784, "stdout_len": 255, "stderr_len": 0}
+{"ts": 1771772182.942826, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade -y", "timeout": 600}
+{"ts": 1771772183.486738, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade -y", "exit_code": 0, "ok": true, "duration_s": 0.543, "stdout_len": 215, "stderr_len": 0}
+{"ts": 1771772187.1201768, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get install nginx -y", "timeout": 600}
+{"ts": 1771772187.670201, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get install nginx -y", "exit_code": 0, "ok": true, "duration_s": 0.549, "stdout_len": 262, "stderr_len": 0}
+{"ts": 1771772189.309566, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "nginx -v", "timeout": 600}
+{"ts": 1771772189.654689, "event": "ssh_done", "cmd": "nginx -v", "exit_code": 127, "ok": false, "duration_s": 0.344, "stdout_len": 0, "stderr_len": 42, "stdout_head": "", "stderr_head": "bash: строка 1: nginx: команда не найдена\n"}
+{"ts": 1771772191.715013, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "which nginx", "timeout": 600}
+{"ts": 1771772192.04671, "event": "ssh_done", "cmd": "which nginx", "exit_code": 1, "ok": false, "duration_s": 0.331, "stdout_len": 0, "stderr_len": 0, "stdout_head": "", "stderr_head": ""}
+{"ts": 1771772193.59114, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "systemctl is-active nginx", "timeout": 600}
+{"ts": 1771772193.9164128, "event": "ssh_done", "cmd": "systemctl is-active nginx", "exit_code": 0, "ok": true, "duration_s": 0.324, "stdout_len": 7, "stderr_len": 0}
+{"ts": 1771772195.882259, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "whereis nginx", "timeout": 600}
+{"ts": 1771772196.220798, "event": "ssh_done", "cmd": "whereis nginx", "exit_code": 0, "ok": true, "duration_s": 0.338, "stdout_len": 82, "stderr_len": 0}
+{"ts": 1771772197.672516, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "/usr/sbin/nginx -v", "timeout": 600}
+{"ts": 1771772197.950182, "event": "ssh_done", "cmd": "/usr/sbin/nginx -v", "exit_code": 0, "ok": true, "duration_s": 0.277, "stdout_len": 0, "stderr_len": 28}
+{"ts": 1771772199.0400572, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "systemctl status nginx", "timeout": 600}
+{"ts": 1771772199.322544, "event": "ssh_done", "cmd": "systemctl status nginx", "exit_code": 0, "ok": true, "duration_s": 0.282, "stdout_len": 953, "stderr_len": 0}
+{"ts": 1771772203.6150558, "event": "report_written", "path": "reports/report_192.168.64.4_20260222_145643.md"}
+{"ts": 1771772203.615472, "event": "agent_done", "final_len": 207, "steps": 11}
+{"ts": 1771772582.669018, "event": "agent_start", "goal": "Проверь систему на важные и критические ошибки, проведи диагностику работы памяти и диска, составь отчет", "host": "192.168.64.4", "user": "user", "max_steps": 35}
+{"ts": 1771772586.916509, "event": "ssh_denied", "cmd": "dmesg | grep -i \"error\\|fail\\|panic\\|oops\" | tail -20", "error": "Chaining/token '|' is not allowed. One command per step."}
+{"ts": 1771772588.7234051, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "journalctl -p err -n 20 --no-pager", "timeout": 600}
+{"ts": 1771772589.0678148, "event": "ssh_done", "cmd": "journalctl -p err -n 20 --no-pager", "exit_code": 0, "ok": true, "duration_s": 0.344, "stdout_len": 17, "stderr_len": 185}
+{"ts": 1771772591.4667468, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "systemctl --failed", "timeout": 600}
+{"ts": 1771772591.7824728, "event": "ssh_done", "cmd": "systemctl --failed", "exit_code": 0, "ok": true, "duration_s": 0.315, "stdout_len": 59, "stderr_len": 0}
+{"ts": 1771772594.2596, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "free -h", "timeout": 600}
+{"ts": 1771772594.605655, "event": "ssh_done", "cmd": "free -h", "exit_code": 0, "ok": true, "duration_s": 0.346, "stdout_len": 207, "stderr_len": 0}
+{"ts": 1771772599.899185, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "df -h", "timeout": 600}
+{"ts": 1771772600.242466, "event": "ssh_done", "cmd": "df -h", "exit_code": 0, "ok": true, "duration_s": 0.342, "stdout_len": 967, "stderr_len": 0}
+{"ts": 1771772602.7805068, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "cat /proc/loadavg", "timeout": 600}
+{"ts": 1771772603.1173491, "event": "ssh_done", "cmd": "cat /proc/loadavg", "exit_code": 0, "ok": true, "duration_s": 0.336, "stdout_len": 26, "stderr_len": 0}
+{"ts": 1771772604.280731, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "iostat -x 1 2", "timeout": 600}
+{"ts": 1771772604.6150038, "event": "ssh_done", "cmd": "iostat -x 1 2", "exit_code": 127, "ok": false, "duration_s": 0.334, "stdout_len": 0, "stderr_len": 43, "stdout_head": "", "stderr_head": "bash: строка 1: iostat: команда не найдена\n"}
+{"ts": 1771772606.082507, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get install -y sysstat", "timeout": 600}
+{"ts": 1771772608.417096, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get install -y sysstat", "exit_code": 0, "ok": true, "duration_s": 2.334, "stdout_len": 3532, "stderr_len": 599}
+{"ts": 1771772610.3087301, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "iostat -x 1 2", "timeout": 600}
+{"ts": 1771772611.595681, "event": "ssh_done", "cmd": "iostat -x 1 2", "exit_code": 0, "ok": true, "duration_s": 1.286, "stdout_len": 1089, "stderr_len": 0}
+{"ts": 1771772612.65572, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "vmstat 1 2", "timeout": 600}
+{"ts": 1771772613.919086, "event": "ssh_done", "cmd": "vmstat 1 2", "exit_code": 0, "ok": true, "duration_s": 1.263, "stdout_len": 340, "stderr_len": 0}
+{"ts": 1771772615.8482869, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "smartctl -H /dev/vda", "timeout": 600}
+{"ts": 1771772616.170856, "event": "ssh_done", "cmd": "smartctl -H /dev/vda", "exit_code": 127, "ok": false, "duration_s": 0.322, "stdout_len": 0, "stderr_len": 45, "stdout_head": "", "stderr_head": "bash: строка 1: smartctl: команда не найдена\n"}
+{"ts": 1771772617.780215, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get install -y smartmontools", "timeout": 600}
+{"ts": 1771772619.358919, "event": "ssh_done", "cmd": "DEBIAN_FRONTEND=noninteractive sudo apt-get install -y smartmontools", "exit_code": 0, "ok": true, "duration_s": 1.578, "stdout_len": 1757, "stderr_len": 599}
+{"ts": 1771772624.230418, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "smartctl -H /dev/vda", "timeout": 600}
+{"ts": 1771772624.511612, "event": "ssh_done", "cmd": "smartctl -H /dev/vda", "exit_code": 127, "ok": false, "duration_s": 0.281, "stdout_len": 0, "stderr_len": 45, "stdout_head": "", "stderr_head": "bash: строка 1: smartctl: команда не найдена\n"}
+{"ts": 1771772625.846108, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "which smartctl", "timeout": 600}
+{"ts": 1771772626.183579, "event": "ssh_done", "cmd": "which smartctl", "exit_code": 1, "ok": false, "duration_s": 0.337, "stdout_len": 0, "stderr_len": 0, "stdout_head": "", "stderr_head": ""}
+{"ts": 1771772628.330513, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "ls -la /usr/sbin/smartctl", "timeout": 600}
+{"ts": 1771772628.658368, "event": "ssh_done", "cmd": "ls -la /usr/sbin/smartctl", "exit_code": 0, "ok": true, "duration_s": 0.327, "stdout_len": 63, "stderr_len": 0}
+{"ts": 1771772631.885204, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "smartctl -H /dev/vda", "timeout": 600}
+{"ts": 1771772632.210149, "event": "ssh_done", "cmd": "smartctl -H /dev/vda", "exit_code": 127, "ok": false, "duration_s": 0.324, "stdout_len": 0, "stderr_len": 45, "stdout_head": "", "stderr_head": "bash: строка 1: smartctl: команда не найдена\n"}
+{"ts": 1771772634.039489, "event": "ssh_start", "host": "192.168.64.4", "user": "user", "cmd": "PATH=/usr/sbin:$PATH smartctl -H /dev/vda", "timeout": 600}
+{"ts": 1771772634.384584, "event": "ssh_done", "cmd": "PATH=/usr/sbin:$PATH smartctl -H /dev/vda", "exit_code": 1, "ok": false, "duration_s": 0.345, "stdout_len": 284, "stderr_len": 0, "stdout_head": "smartctl 7.4 2023-08-01 r5530 [aarch64-linux-6.12.73+deb13-arm64] (local build)\nCopyright (C) 2002-23, Bruce Allen, Christian Franke, www.smartmontools.org\n\n/dev/vda: Unable to detect device type\nPlease specify device type with the -d option.\n\nUse smartctl -h to get a usage summary\n\n", "stderr_head": ""}
+{"ts": 1771772642.0314949, "event": "llm_error", "error": "Recursion limit of 35 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT", "type": "GraphRecursionError"}
+{"ts": 1771772642.033626, "event": "report_written", "path": "reports/report_192.168.64.4_20260222_150402.md"}
+{"ts": 1771772642.033924, "event": "agent_done", "final_len": 280, "steps": 17}
