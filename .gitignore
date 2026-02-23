@@ -1,2 +1,5 @@
 # Ignore the entire 'temp' directory
 reports/
+
+# files logs
+*.log
